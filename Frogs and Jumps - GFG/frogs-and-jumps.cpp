@@ -14,7 +14,7 @@ class Solution {
        {
            int pos=frogs[i];
            int k=pos;
-           if(pos<=leaves && temp[k]==0)
+           if( pos<=leaves && temp[k]==0)
            {
                
            
