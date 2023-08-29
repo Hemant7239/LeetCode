@@ -36,14 +36,14 @@ long long maxArea(long long A[], int len)
         
     }
     return t;*/
-    long long maxWater = 0;
+    int maxWater = 0;
     int i = 0;
     int j = len - 1;
 
     while (i < j) {
-        long long minHeight = min(A[i], A[j]);
-        long long distance = j - i;
-        long long water = minHeight * distance;
+        int minHeight = min(A[i], A[j]);
+        int distance = j - i;
+        int water = minHeight * distance;
         
         maxWater = max(maxWater, water);
         
